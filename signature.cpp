@@ -106,18 +106,3 @@ void printSign(int y, int x)
     E(y, x);
 
 }
-
-int main()
-{
-    initscr();
-    curs_set(0);
-    noecho();
-
-    int y = 0, x = 0;
-
-    printSign(y, x);
-
-    getch();
-    endwin();
-    return 0;
-}
