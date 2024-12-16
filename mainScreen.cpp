@@ -1,14 +1,16 @@
 #include <ncurses/ncurses.h>
+#include "signature.cpp"
 
 int main()
 {
     initscr();
-    keypad(stdscr, TRUE);
     curs_set(0);
     noecho();
 
-    mvprintw(0, 0, "Hello World!");
-    mvprintw(1, 0, "Nice weather, yeah?");
+    int y = (LINES / 2) - 9, x = (COLS / 2) - 35;
+
+    printSign(y,x);
+
     getch();
     endwin();
     return 0;
