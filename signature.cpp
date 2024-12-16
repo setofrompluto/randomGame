@@ -104,5 +104,5 @@ void printSign(int y, int x)
     A(y, x);
     J(y, x);
     E(y, x);
-
+    mvprintw(y + 9, x, "           I n    r a n d o m n e s s   w e   t r u s t");
 }
